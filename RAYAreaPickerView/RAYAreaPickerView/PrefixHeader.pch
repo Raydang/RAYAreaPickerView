@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  RAYAreaPickerView
+//
+//  Created by richerpay on 15/5/26.
+//  Copyright (c) 2015年 richerpay. All rights reserved.
+//
+
+#ifndef RAYAreaPickerView_PrefixHeader_pch
+#define RAYAreaPickerView_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+#endif
+
+#import "RAYAreaPickerDefine.h"
+
+#endif

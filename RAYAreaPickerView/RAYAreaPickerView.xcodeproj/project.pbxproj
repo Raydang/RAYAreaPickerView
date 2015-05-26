@@ -14,6 +14,11 @@
 		71D61C1A1B1327DA0019C9DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D61C191B1327DA0019C9DB /* Images.xcassets */; };
 		71D61C1D1B1327DA0019C9DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D61C1B1B1327DA0019C9DB /* LaunchScreen.xib */; };
 		71D61C291B1327DA0019C9DB /* RAYAreaPickerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D61C281B1327DA0019C9DB /* RAYAreaPickerViewTests.m */; };
+		71E2ED351B14079C00AAF1F7 /* RAYAreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2ED341B14079C00AAF1F7 /* RAYAreaPickerView.m */; };
+		71E2ED391B14224700AAF1F7 /* RAYSitePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2ED381B14224700AAF1F7 /* RAYSitePickerView.m */; };
+		71E2ED3C1B14257D00AAF1F7 /* RAYSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E2ED3B1B14257D00AAF1F7 /* RAYSite.m */; };
+		71E2ED431B1456CB00AAF1F7 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71E2ED411B1456CB00AAF1F7 /* area.plist */; };
+		71E2ED441B1456CB00AAF1F7 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71E2ED421B1456CB00AAF1F7 /* city.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		71D61C221B1327DA0019C9DB /* RAYAreaPickerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAYAreaPickerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D61C271B1327DA0019C9DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71D61C281B1327DA0019C9DB /* RAYAreaPickerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAYAreaPickerViewTests.m; sourceTree = "<group>"; };
+		71E2ED301B14030B00AAF1F7 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		71E2ED311B14034A00AAF1F7 /* RAYAreaPickerDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAYAreaPickerDefine.h; sourceTree = "<group>"; };
+		71E2ED331B14079C00AAF1F7 /* RAYAreaPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAYAreaPickerView.h; path = AreaPickerView/RAYAreaPickerView.h; sourceTree = "<group>"; };
+		71E2ED341B14079C00AAF1F7 /* RAYAreaPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAYAreaPickerView.m; path = AreaPickerView/RAYAreaPickerView.m; sourceTree = "<group>"; };
+		71E2ED371B14224700AAF1F7 /* RAYSitePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAYSitePickerView.h; path = SitePickerView/RAYSitePickerView.h; sourceTree = "<group>"; };
+		71E2ED381B14224700AAF1F7 /* RAYSitePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAYSitePickerView.m; path = SitePickerView/RAYSitePickerView.m; sourceTree = "<group>"; };
+		71E2ED3A1B14257D00AAF1F7 /* RAYSite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAYSite.h; path = SitePickerView/RAYSite.h; sourceTree = "<group>"; };
+		71E2ED3B1B14257D00AAF1F7 /* RAYSite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAYSite.m; path = SitePickerView/RAYSite.m; sourceTree = "<group>"; };
+		71E2ED411B1456CB00AAF1F7 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
+		71E2ED421B1456CB00AAF1F7 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,8 @@
 		71D61C0B1B1327DA0019C9DB /* RAYAreaPickerView */ = {
 			isa = PBXGroup;
 			children = (
+				71E2ED361B14221200AAF1F7 /* SitePickerView */,
+				71E2ED321B14076E00AAF1F7 /* AreaPickerView */,
 				71D61C101B1327DA0019C9DB /* AppDelegate.h */,
 				71D61C111B1327DA0019C9DB /* AppDelegate.m */,
 				71D61C131B1327DA0019C9DB /* ViewController.h */,
@@ -96,8 +113,12 @@
 		71D61C0C1B1327DA0019C9DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				71E2ED411B1456CB00AAF1F7 /* area.plist */,
+				71E2ED421B1456CB00AAF1F7 /* city.plist */,
 				71D61C0D1B1327DA0019C9DB /* Info.plist */,
 				71D61C0E1B1327DA0019C9DB /* main.m */,
+				71E2ED301B14030B00AAF1F7 /* PrefixHeader.pch */,
+				71E2ED311B14034A00AAF1F7 /* RAYAreaPickerDefine.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +138,26 @@
 				71D61C271B1327DA0019C9DB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71E2ED321B14076E00AAF1F7 /* AreaPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				71E2ED331B14079C00AAF1F7 /* RAYAreaPickerView.h */,
+				71E2ED341B14079C00AAF1F7 /* RAYAreaPickerView.m */,
+			);
+			name = AreaPickerView;
+			sourceTree = "<group>";
+		};
+		71E2ED361B14221200AAF1F7 /* SitePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				71E2ED371B14224700AAF1F7 /* RAYSitePickerView.h */,
+				71E2ED381B14224700AAF1F7 /* RAYSitePickerView.m */,
+				71E2ED3A1B14257D00AAF1F7 /* RAYSite.h */,
+				71E2ED3B1B14257D00AAF1F7 /* RAYSite.m */,
+			);
+			name = SitePickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +241,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D61C181B1327DA0019C9DB /* Main.storyboard in Resources */,
+				71E2ED431B1456CB00AAF1F7 /* area.plist in Resources */,
+				71E2ED441B1456CB00AAF1F7 /* city.plist in Resources */,
 				71D61C1D1B1327DA0019C9DB /* LaunchScreen.xib in Resources */,
 				71D61C1A1B1327DA0019C9DB /* Images.xcassets in Resources */,
 			);
@@ -219,9 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E2ED351B14079C00AAF1F7 /* RAYAreaPickerView.m in Sources */,
 				71D61C151B1327DA0019C9DB /* ViewController.m in Sources */,
 				71D61C121B1327DA0019C9DB /* AppDelegate.m in Sources */,
+				71E2ED3C1B14257D00AAF1F7 /* RAYSite.m in Sources */,
 				71D61C0F1B1327DA0019C9DB /* main.m in Sources */,
+				71E2ED391B14224700AAF1F7 /* RAYSitePickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +393,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RAYAreaPickerView/PrefixHeader.pch;
 				INFOPLIST_FILE = RAYAreaPickerView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +405,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RAYAreaPickerView/PrefixHeader.pch;
 				INFOPLIST_FILE = RAYAreaPickerView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +466,7 @@
 				71D61C2E1B1327DA0019C9DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71D61C2F1B1327DA0019C9DB /* Build configuration list for PBXNativeTarget "RAYAreaPickerViewTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +475,7 @@
 				71D61C311B1327DA0019C9DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
